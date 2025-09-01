@@ -31,7 +31,7 @@ export default function Header({ opened, toggle }: HeaderProps) {
         <ActionIcon
           variant="filled"
           color={isDark ? "lime" : "teal"}
-          aria-label="Settings"
+          aria-label={isDark ? "Light mode" : "Dark mode"}
           onClick={toggleColorScheme}
         >
           <IconMoon size={20} />
