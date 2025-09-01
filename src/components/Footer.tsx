@@ -1,4 +1,11 @@
 import { type FooterProps } from "../libs/Footer";
-export default function Footer() {
-  return <div>Footer</div>;
+import { Text, Group } from "@mantine/core";
+export default function Footer({ year, fullName, studentId }: FooterProps) {
+  return (
+    <Group p="md" justify="center">
+      <Text>
+        Copyright © {year} {fullName} {studentId}
+      </Text>
+    </Group>
+  );
 }
