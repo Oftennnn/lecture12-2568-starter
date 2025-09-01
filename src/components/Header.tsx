@@ -30,7 +30,7 @@ export default function Header({ opened, toggle }: HeaderProps) {
       <Group gap={5}>
         <ActionIcon
           variant="filled"
-          color="green"
+          color={isDark ? "lime" : "teal"}
           aria-label="Settings"
           onClick={toggleColorScheme}
         >
