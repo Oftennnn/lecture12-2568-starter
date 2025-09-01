@@ -14,7 +14,7 @@ interface HeaderProps {
 
 export default function Header({ opened, toggle }: HeaderProps) {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
-
+  const isDark = colorScheme === "dark";
   return (
     <Group p="md" justify="space-between">
       <Group>
